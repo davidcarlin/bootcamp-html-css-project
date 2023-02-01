@@ -36,17 +36,13 @@ nav a {
     color: #0d47a1
 }
 
-main {
-    background-image: url("assets/IMG_5606.JPG");
-
+#uyuni {
+    width: 100%;
 }
-
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    padding: 1rem 2rem;
     background: #cfd8dc;
 }
 
