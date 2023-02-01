@@ -10,25 +10,18 @@ body {
 
 nav {
     display: flex;
-    /* 1 */
     justify-content: space-between;
-    /* 2 */
     padding: 1rem 2rem;
-    /* 3 */
     background: #cfd8dc;
-    /* 4 */
 }
 
 nav ul {
     display: flex;
-    /* 5 */
     list-style: none;
-    /* 6 */
 }
 
 nav li {
     padding-left: 1rem;
-    /* 7! */
 }
 
 nav a {
@@ -39,14 +32,29 @@ nav a {
 #uyuni {
     width: 100%;
 }
+
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background: #cfd8dc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-/* Style all font awesome icons */
+.photos-and-text {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    height: 300px;
+}
+
+/* social icon styling */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -70,7 +78,7 @@ footer {
 }
 
 /* 
-  Extra small devices (phones, 600px and down) 
+  Extra small devices (phones, 600px and down)
 */
 @media only screen and (max-width: 600px) {
     nav {
