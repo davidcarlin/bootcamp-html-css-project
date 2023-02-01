@@ -1,11 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Tahoma, Serif;
     color: #263238;
+    margin: 0;
+    min-height: 100vh;
 }
 
 nav {
@@ -30,7 +33,10 @@ nav a {
 }
 
 #uyuni {
-    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: calc(100vh-50px);
+    object-fit: cover;
 }
 
 footer {
@@ -45,13 +51,25 @@ footer {
     text-align: center;
 }
 
-.photos-and-text {
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
     display: flex;
 }
 
-.column {
+.images {
     flex: 50%;
-    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.text {
+    flex: 50%;
+    padding: 40px;
 }
 
 /* social icon styling */
