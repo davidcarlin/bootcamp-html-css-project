@@ -72,6 +72,11 @@ main {
     padding: 40px;
 }
 
+ul.bio-bullets {
+    font-size: 1em;
+    line-height: 2;
+}
+
 /* social icon styling */
 .fa {
     padding: 20px;
