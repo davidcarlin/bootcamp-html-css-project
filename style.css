@@ -9,13 +9,15 @@ body {
     color: #263238;
     margin: 0;
     min-height: 100vh;
+    background-color: #e2e8ea;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background: #cfd8dc;
+    background: #e2e8ea;
+    border-bottom: black solid .1em;
 }
 
 nav ul {
@@ -43,12 +45,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: #cfd8dc;
+    background: #e2e8ea;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
+    border-top: black solid .1em;
 }
 
 img {
@@ -77,7 +80,7 @@ ul.bio-bullets {
     line-height: 2;
 }
 
-/* social icon styling */
+/* social icons styling */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -100,9 +103,7 @@ ul.bio-bullets {
     color: white;
 }
 
-/* 
-  Extra small devices (phones, 600px and down)
-*/
+/* nav and images styling for phones */
 @media only screen and (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -115,5 +116,10 @@ ul.bio-bullets {
 
     nav li {
         padding: 0.5rem 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
     }
 }
