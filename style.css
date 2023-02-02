@@ -31,7 +31,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #0d47a1
+    color: #0d47a1;
 }
 
 #uyuni {
@@ -60,7 +60,7 @@ img {
     object-fit: cover;
 }
 
-main {
+main.about {
     display: flex;
     height: 100%;
 }
@@ -83,6 +83,33 @@ ul.bio-bullets {
     margin-top: 30px;
 }
 
+h3.heading {
+    border-bottom: solid #0d47a1 2.5px; 
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+h3.jobtitle {
+    padding-top: 11px;
+    padding-left: 20px;
+}
+
+h4.heading {
+    padding-top: 3px;
+    padding-left: 20px;
+}
+
+h4.date {
+    font-style: italic;
+    padding-top: 3px;
+    padding-left: 20px;
+}
+
+p.experience {
+    padding-top: 6px;
+    padding-left: 20px;
+}
+
 /* social icons styling */
 .fa {
     padding: 20px;
@@ -102,7 +129,7 @@ ul.bio-bullets {
 }
 
 .fa-github {
-    background: #55ACEE;
+    background: #374046;
     color: white;
 }
 
